@@ -1,9 +1,17 @@
 import { ArrowRight, BatteryCharging, CheckCircle2, Phone, Recycle } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { scrapEnquiryLink, whatsappLink } from "@/lib/whatsapp";
-import SafeImage from "@/components/ui/SafeImage";
 import ButtonLink from "@/components/ui/Button";
 import WhatsAppIcon from "@/components/ui/WhatsAppIcon";
+import HeroCarousel, { type HeroSlide } from "./HeroCarousel";
+
+const heroSlides: HeroSlide[] = [
+  { src: "/images/steel-scrap-pile.webp", alt: "Large pile of old iron and steel scrap at a scrap yard" },
+  { src: "/images/scrap-yard-daikoku.webp", alt: "Metal scrap yard with a crane and piles of sorted scrap" },
+  { src: "/images/scrap-yard-emr.webp", alt: "Industrial scrap metal yard with a large pile of baled scrap" },
+  { src: "/images/scrap-yard-leaf-springs.webp", alt: "Heap of old iron leaf springs and metal parts in a scrap yard" },
+  { src: "/images/rusty-iron-mountain.webp", alt: "Mountain of rusty iron scrap ready for recycling" },
+];
 
 const trustPoints = [
   "Fair & transparent pricing",
@@ -20,21 +28,10 @@ export default function Hero() {
       aria-labelledby="hero-heading"
       className="relative isolate flex min-h-[calc(100svh-4rem)] items-center overflow-hidden bg-primary lg:min-h-[calc(100svh-7rem)]"
     >
-      <div className="absolute inset-0 -z-10 animate-slow-zoom">
-        <SafeImage
-          src="/images/steel-scrap-pile.webp"
-          alt="Large pile of old iron and steel scrap at a scrap yard"
-          fill
-          preload
-          sizes="100vw"
-          className="object-cover"
-        />
-      </div>
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black/95 via-black/80 to-black/20" aria-hidden="true" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-primary via-transparent to-transparent" aria-hidden="true" />
+      <HeroCarousel slides={heroSlides} />
 
-      <div className="test mx-auto grid w-full max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-12 lg:py-24">
-        <div className="lg:col-span-7">
+      <div className="test mx-auto grid w-full max-w-8xl items-center gap-12 px-4 pb-24 pt-16 sm:px-6 lg:grid-cols-12 lg:pb-36 lg:pt-24">
+        <div className="lg:col-span-6 [text-shadow:0_2px_14px_rgb(0_0_0/0.45)]">
           <p className="inline-flex animate-fade-up items-center gap-2 rounded-full border border-highlight/30 bg-highlight/10 px-4 py-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-highlight sm:text-sm sm:tracking-[0.15em]">
             <Recycle className="h-4 w-4 shrink-0" aria-hidden="true" />
             Old Scrap Buying (Kailankadai) · Used Batteries
@@ -74,11 +71,11 @@ export default function Hero() {
         {/* Quick quote card */}
         <aside className="animate-fade-up [animation-delay:600ms] lg:col-span-5 lg:justify-self-end">
           <div className="relative max-w-md overflow-hidden rounded-2xl border border-white/10 bg-white/[0.06] p-6 shadow-2xl backdrop-blur-md sm:p-8">
-            <div className="absolute inset-x-0 top-0 h-1.5 hazard-stripe" aria-hidden="true" />
+            {/* <div className="absolute inset-x-0 top-0 h-1.5 hazard-stripe" aria-hidden="true" /> */}
             <h2 className="font-display text-2xl font-bold uppercase tracking-wide text-white sm:text-3xl">
               Get the Best Price Today
             </h2>
-            <p className="mt-2 text-zinc-300">
+            <p className="mt-2 text-zinc-200">
               Send a photo of your scrap on WhatsApp and get a quick price quote from our team.
             </p>
             <div className="mt-6 space-y-3">

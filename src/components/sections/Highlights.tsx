@@ -27,7 +27,7 @@ const highlights: { icon: LucideIcon; title: string; text: string }[] = [
 export default function Highlights() {
   return (
     <section aria-label="Business highlights" className="relative z-10 bg-surface pb-16 sm:pb-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+      <div className="mx-auto max-w-8xl px-4 sm:px-6">
         <div className="-mt-px grid gap-4 pt-12 sm:grid-cols-2 lg:-mt-16 lg:grid-cols-4 lg:pt-0">
           {highlights.map(({ icon: Icon, title, text }, i) => (
             <Reveal

@@ -53,7 +53,7 @@ export default function Header() {
     <>
       {/* Top info bar (desktop) */}
       <div className="hidden bg-black text-xs text-zinc-300 lg:block">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2">
+        <div className="mx-auto flex max-w-8xl items-center justify-between px-6 py-2">
           <div className="flex items-center gap-6">
             <a href={`tel:${contact.phoneDial}`} className="flex items-center gap-1.5 transition hover:text-highlight">
               <Phone className="h-3.5 w-3.5 text-accent" aria-hidden="true" /> {contact.phoneDisplay}
@@ -78,7 +78,7 @@ export default function Header() {
             : "border-transparent bg-primary"
         }`}
       >
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:h-20">
+        <div className="mx-auto flex h-16 max-w-8xl items-center justify-between px-4 sm:px-6 lg:h-20">
           <a href="#home" aria-label={`${siteConfig.name} — home`} onClick={() => setOpen(false)}>
             <Logo />
           </a>

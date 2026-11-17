@@ -25,7 +25,7 @@ const reasons = [
 export default function About() {
   return (
     <section id="about" aria-labelledby="about-heading" className="overflow-hidden bg-white py-20 sm:py-24">
-      <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-8xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2">
         {/* Image collage */}
         <Reveal className="relative mx-auto w-full max-w-xl lg:max-w-none">
           <div className="relative aspect-[4/5] w-4/5 overflow-hidden rounded-2xl shadow-2xl sm:aspect-[4/4.6]">
@@ -92,7 +92,7 @@ export default function About() {
       </div>
 
       {/* Why choose us */}
-      <div className="mx-auto mt-24 max-w-7xl px-4 sm:px-6">
+      <div className="mx-auto mt-24 max-w-8xl px-4 sm:px-6">
         <Reveal className="relative overflow-hidden rounded-3xl bg-primary px-6 py-12 sm:px-12 lg:py-14">
           <div className="grid-pattern absolute inset-0" aria-hidden="true" />
           <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-accent/20 blur-3xl" aria-hidden="true" />

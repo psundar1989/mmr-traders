@@ -28,7 +28,7 @@ export default function Contact() {
 
   return (
     <section id="contact" aria-labelledby="contact-heading" className="bg-white py-20 sm:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+      <div className="mx-auto max-w-8xl px-4 sm:px-6">
         <SectionHeading
           id="contact-heading"
           eyebrow="Contact Us"

@@ -2,15 +2,17 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, Expand, X } from "lucide-react";
-import { galleryImages, type GalleryCategory } from "@/data/gallery";
+import { galleryCategories, galleryImages, type GalleryCategory } from "@/data/gallery";
 import SectionHeading from "@/components/ui/SectionHeading";
 import SafeImage from "@/components/ui/SafeImage";
 
-const tabs: ("All" | GalleryCategory)[] = ["All", "Scrap", "Batteries"];
+const tabs: ("All" | GalleryCategory)[] = ["All", ...galleryCategories];
 
-/** Bento layout on large screens for the full gallery (12 images → 4×4 grid). */
-const featureSpan = (i: number) =>
-  i === 0 || i === 5 || i === 10 ? "lg:row-span-2" : i === 3 ? "lg:col-span-2" : "";
+/** Bento layout on large screens for the full gallery: every block of 12 images fills a 4×4 grid. */
+const featureSpan = (i: number) => {
+  const n = i % 12;
+  return n === 0 || n === 5 ? "lg:row-span-2" : n === 1 || n === 7 ? "lg:col-span-2" : "";
+};
 
 export default function Gallery() {
   const [tab, setTab] = useState<(typeof tabs)[number]>("All");
@@ -42,7 +44,7 @@ export default function Gallery() {
 
   return (
     <section id="gallery" aria-labelledby="gallery-heading" className="bg-surface py-20 sm:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+      <div className="mx-auto max-w-8xl px-4 sm:px-6">
         <SectionHeading
           id="gallery-heading"
           eyebrow="Gallery"
@@ -50,7 +52,7 @@ export default function Gallery() {
           description="A look at the kinds of scrap materials we buy and the used inverter batteries we sell."
         />
 
-        <div className="mt-10 flex justify-center gap-2" role="group" aria-label="Filter gallery">
+        <div className="mt-10 flex flex-wrap justify-center gap-2" role="group" aria-label="Filter gallery">
           {tabs.map((t) => (
             <button
               key={t}
@@ -86,7 +88,8 @@ export default function Gallery() {
                   alt={img.alt}
                   fill
                   sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
                 <span className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/0 to-black/0 opacity-80 transition group-hover:opacity-100" />
                 <span className="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-2 text-left">

@@ -39,3 +39,20 @@ Dummy/placeholder images. Replace with your own shop photos before going live.
 | plastic-scrap.webp | [Bales of PET bottles stacked.jpg](https://commons.wikimedia.org/wiki/File:Bales_of_PET_bottles_stacked.jpg) | CC BY-SA 4.0 |
 | scrap-batteries.webp | [Pallet of scrap lead-acid batteries (left side).jpg](https://commons.wikimedia.org/wiki/File:Pallet_of_scrap_lead-acid_batteries_(left_side).jpg) | CC0 |
 | inverter-batteries-old.webp | [Kabus 000083 171297 516086 4578 (36715283896).jpg](https://commons.wikimedia.org/wiki/File:Kabus_000083_171297_516086_4578_(36715283896).jpg) | Public domain |
+| scrap-yard-daikoku.webp | [Metal scrap yard on Daikoku Pier 3.jpg](https://commons.wikimedia.org/wiki/File:Metal_scrap_yard_on_Daikoku_Pier_3.jpg) | CC0 |
+| scrap-yard-emr.webp | [EMR scrap metal yard, Gipsy Lane - geograph.org.uk - 2796198.jpg](https://commons.wikimedia.org/wiki/File:EMR_scrap_metal_yard,_Gipsy_Lane_-_geograph.org.uk_-_2796198.jpg) | CC BY-SA 2.0 |
+| scrap-yard-leaf-springs.webp | [Leaf springs in a scrap yard.jpg](https://commons.wikimedia.org/wiki/File:Leaf_springs_in_a_scrap_yard.jpg) | CC0 |
+| rusty-iron-mountain.webp | [Mountain of rusty iron (48473053467).jpg](https://commons.wikimedia.org/wiki/File:Mountain_of_rusty_iron_(48473053467).jpg) | CC BY 2.0 |
+| scrap-yard-cars.webp | [Moskvich 2141 in a scrap yard in Tomsk.jpg](https://commons.wikimedia.org/wiki/File:Moskvich_2141_in_a_scrap_yard_in_Tomsk.jpg) | CC BY-SA 4.0 |
+| metal-scrap-pile.webp | [Scrap pile (26272152760).jpg](https://commons.wikimedia.org/wiki/File:Scrap_pile_(26272152760).jpg) | CC BY 2.0 |
+| copper-wire-scrap.webp | [La empresa.jpg](https://commons.wikimedia.org/wiki/File:La_empresa.jpg) | CC BY-SA 4.0 |
+| glass-bottles-recycling.webp | [Soju bottles in a glass recycling bin, near apartment complex, in Korea.jpg](https://commons.wikimedia.org/wiki/File:Soju_bottles_in_a_glass_recycling_bin,_near_apartment_complex,_in_Korea.jpg) | CC BY-SA 4.0 |
+| cardboard-bales.webp | [Laborers unloading bales of scrap cardboard from truck Khulna.jpg](https://commons.wikimedia.org/wiki/File:Laborers_unloading_bales_of_scrap_cardboard_from_truck_Khulna.jpg) | CC BY-SA 4.0 |
+| plastic-waste-pile.webp | [Zapfendorf Plastic Recycling-20180621-RM-114359.jpg](https://commons.wikimedia.org/wiki/File:Zapfendorf_Plastic_Recycling-20180621-RM-114359.jpg) | CC BY-SA 4.0 |
+| plastic-bales-truck.webp | [Plastic waste to be recycled.jpg](https://commons.wikimedia.org/wiki/File:Plastic_waste_to_be_recycled.jpg) | CC BY-SA 4.0 |
+| rusty-iron-bands.webp | [Rusty bands of scrap iron.jpg](https://commons.wikimedia.org/wiki/File:Rusty_bands_of_scrap_iron.jpg) | CC BY-SA 4.0 |
+| newspaper-bundles.webp | [Recycling Newspapers.JPG](https://commons.wikimedia.org/wiki/File:Recycling_Newspapers.JPG) | CC0 |
+| newspapers-stack.webp | [Newspapers 2.jpg](https://commons.wikimedia.org/wiki/File:Newspapers_2.jpg) | CC BY-SA 3.0 |
+| brass-parts.webp | [Robinet PETAVIT (détail).jpg](https://commons.wikimedia.org/wiki/File:Robinet_PETAVIT_(d%C3%A9tail).jpg) | CC0 |
+| scrap-batteries-pallet.webp | [Pallet of scrap lead-acid automotive batteries (wide view).jpg](https://commons.wikimedia.org/wiki/File:Pallet_of_scrap_lead-acid_automotive_batteries_(wide_view).jpg) | CC0 |
+| motorcycle-batteries.webp | [Motorcycle batteries at a recycling station in Tuntorp, Brastad 2.jpg](https://commons.wikimedia.org/wiki/File:Motorcycle_batteries_at_a_recycling_station_in_Tuntorp,_Brastad_2.jpg) | CC BY 4.0 |

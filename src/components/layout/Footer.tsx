@@ -18,9 +18,9 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-primary text-zinc-400">
-      <div className="hazard-stripe h-2 w-full" aria-hidden="true" />
+      {/* <div className="hazard-stripe h-2 w-full" aria-hidden="true" /> */}
       <div className="grid-pattern">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-12 lg:py-16">
+        <div className="mx-auto grid  max-w-8xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-12 lg:py-16">
           <div className="lg:col-span-4">
             <Logo />
             <p className="mt-5 max-w-sm leading-relaxed">{siteConfig.shortDescription}</p>
@@ -107,7 +107,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10">
-          <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-6 text-sm sm:flex-row sm:px-6">
+          <div className="mx-auto flex max-w-8xl flex-col items-center justify-between gap-2 px-4 py-6 text-sm sm:flex-row sm:px-6">
             <p>
               © {year} {siteConfig.name}. All rights reserved.
             </p>

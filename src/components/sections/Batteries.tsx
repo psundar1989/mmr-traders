@@ -18,7 +18,7 @@ export default function Batteries() {
       <div className="grid-pattern absolute inset-0" aria-hidden="true" />
       <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-accent/10 blur-3xl" aria-hidden="true" />
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
+      <div className="relative mx-auto max-w-8xl px-4 sm:px-6">
         <SectionHeading
           id="batteries-heading"
           eyebrow="Used Inverter Batteries"
@@ -45,7 +45,7 @@ export default function Batteries() {
           ))}
         </div>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {visible.map((battery) => (
             <div key={battery.id} className="animate-fade-up">
               <BatteryCard battery={battery} />

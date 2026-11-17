@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --container-8xl: 90rem; /* 1536px */
+}
+
 /*
  * Brand colours come from src/config/theme.ts (injected as --brand-* variables
  * in layout.tsx). Edit theme.ts — not this file — to change the colour scheme.

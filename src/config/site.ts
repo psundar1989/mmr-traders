@@ -16,7 +16,7 @@ export const siteConfig = {
 
   name: "MMR Traders",
   logoText: { main: "MMR", sub: "TRADERS" },
-  logoImage: "/images/logo/mmr_logo4.png",
+  logoImage: "/images/logo/mmr_logo5.png",
   tagline: "Scrap Buying & Used Inverter Batteries",
   shortDescription:
     "Trusted local scrap trading business in Kottivakkam, Chennai. We buy all types of old scrap materials and sell quality used inverter batteries at affordable prices.",
@@ -28,7 +28,7 @@ export const siteConfig = {
     /** WhatsApp number: country code + number, digits only. */
     whatsappNumber: "919965797521",
     whatsappDisplay: "+91 99657 97521",
-    email: "sundaramoorthicr@gmail.com",
+    email: "henrymmrtraders@gmail.com",
     gstin: "33AEPPH8568F1Z5",
   },
 

@@ -11,7 +11,7 @@ import ScrapCard from "./ScrapCard";
 export default function ScrapBuying() {
   return (
     <section id="scrap" aria-labelledby="scrap-heading" className="bg-surface py-20 sm:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+      <div className="mx-auto max-w-8xl px-4 sm:px-6">
         <SectionHeading
           id="scrap-heading"
           eyebrow="Scrap Buying"
@@ -19,7 +19,7 @@ export default function ScrapBuying() {
           description="From household scrap to industrial lots — tell us what you have and we will give you the best price. Tap any category to enquire instantly on WhatsApp."
         />
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {scrapCategories.map((category, i) => (
             <Reveal key={category.id} delay={(i % 3) * 100} className="h-full">
               <ScrapCard category={category} />
