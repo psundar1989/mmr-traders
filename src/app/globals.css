@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/*
+ * Brand colours come from src/config/theme.ts (injected as --brand-* variables
+ * in layout.tsx). Edit theme.ts — not this file — to change the colour scheme.
+ */
+@theme inline {
+  --color-primary: var(--brand-primary);
+  --color-primary-soft: var(--brand-primary-soft);
+  --color-accent: var(--brand-accent);
+  --color-accent-dark: var(--brand-accent-dark);
+  --color-highlight: var(--brand-highlight);
+  --color-background: var(--brand-background);
+  --color-surface: var(--brand-surface);
+  --color-heading: var(--brand-heading);
+  --color-body: var(--brand-text);
+  --color-muted: var(--brand-muted);
+  --color-line: var(--brand-line);
+  --color-whatsapp: var(--brand-whatsapp);
+  --color-whatsapp-dark: var(--brand-whatsapp-dark);
+
+  --font-sans: var(--font-body);
+  --font-display: var(--font-heading);
+
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-pulse-ring: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-slow-zoom: slow-zoom 20s ease-out both;
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse-ring {
+    0% { transform: scale(1); opacity: 0.6; }
+    100% { transform: scale(1.7); opacity: 0; }
+  }
+  @keyframes slow-zoom {
+    from { transform: scale(1.12); }
+    to { transform: scale(1); }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-body);
+}
+
+/* Scroll-reveal (see components/ui/Reveal.tsx) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Diagonal industrial stripe used as decoration */
+.hazard-stripe {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--color-highlight) 0 12px,
+    var(--color-primary) 12px 24px
+  );
+}
+
+.grid-pattern {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
