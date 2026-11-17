@@ -23,11 +23,11 @@ export const siteConfig = {
 
   contact: {
     /** Number shown for phone calls (display format + dial format). */
-    phoneDisplay: "+91 99657 97521",
-    phoneDial: "+919965797521",
+    phoneDisplay: "+91 98402 15653",
+    phoneDial: "+919840215653",
     /** WhatsApp number: country code + number, digits only. */
-    whatsappNumber: "919965797521",
-    whatsappDisplay: "+91 99657 97521",
+    whatsappNumber: "919840215653",
+    whatsappDisplay: "+91 98402 15653",
     email: "henrymmrtraders@gmail.com",
     gstin: "33AEPPH8568F1Z5",
   },
@@ -73,7 +73,7 @@ export const siteConfig = {
     title: "MMR Traders | Scrap Buyers & Used Inverter Batteries in Kottivakkam, Chennai",
     titleTemplate: "%s | MMR Traders",
     description:
-      "MMR Traders, Kottivakkam, Chennai — we buy old iron, steel, aluminium, copper, brass, newspapers, glass bottles, plastic and old batteries at the best prices, and sell quality used inverter batteries at affordable prices. Call or WhatsApp +91 99657 97521.",
+      "MMR Traders, Kottivakkam, Chennai — we buy old iron, steel, aluminium, copper, brass, newspapers, glass bottles, plastic and old batteries at the best prices, and sell quality used inverter batteries at affordable prices. Call or WhatsApp +91 98402 15653.",
     keywords: [
       "scrap buyers Chennai",
       "kailankadai",
